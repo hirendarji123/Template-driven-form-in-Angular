@@ -1,0 +1,7 @@
+<form  #f="ngForm">
+  <h3>Eneter a Questionquestion</h3> 
+ <input type="text"  name="Question" ngModel  #Question="ngModel" required>
+
+ <button [disabled]="!f.valid" (click)="submit(f)" class="btn-primary" >add</button>
+
+</form>
